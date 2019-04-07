@@ -1,13 +1,13 @@
-package com.danielhenry.myblog;
+package com.danielhenry.myblogengine;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MyblogApplication {
+public class MyblogengineApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MyblogApplication.class, args);
+		SpringApplication.run(MyblogengineApplication.class, args);
 	}
 
 }
