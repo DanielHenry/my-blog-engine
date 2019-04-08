@@ -1,4 +1,4 @@
-package com.danielhenry.myblogengine;
+package com.danielhenry.myblogengine.entity;
 
 public class Greeting {
 
