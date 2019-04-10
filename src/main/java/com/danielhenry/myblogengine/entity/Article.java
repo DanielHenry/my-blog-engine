@@ -1,20 +1,29 @@
 package com.danielhenry.myblogengine.entity;
 
+import lombok.Data;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Data
+@Entity
 public class Article {
 
-    private final long id;
-    private final String content;
+    private @Id @GeneratedValue Long id;
+	private String title;
+	private String content;
 
-    public Article(long id, String content) {
-        this.id = id;
-        this.content = content;
+	Article(String title, String content) {
+		this.title = title;
+		this.content = content;
     }
-
-    public long getId() {
-        return id;
+    
+    public String getTitle() {
+        return this.title;
     }
 
     public String getContent() {
-        return content;
+        return this.content;
     }
 }
