@@ -3,6 +3,7 @@ package com.danielhenry.myblogengine.controller;
 import java.util.List;
 
 import com.danielhenry.myblogengine.entity.Article;
+import com.danielhenry.myblogengine.repository.ArticleRepository;
 
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -30,7 +31,7 @@ class ArticleController {
 
 	@PostMapping("/articles")
 	Article newArticle(@RequestBody Article newArticle) {
-		return repository.save(newEmployee);
+		return repository.save(newArticle);
 	}
 
 	// Single item
