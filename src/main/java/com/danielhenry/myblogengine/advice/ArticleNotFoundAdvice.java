@@ -9,12 +9,12 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import com.danielhenry.myblogengine.exception.ArticleNotFoundException;
 
 @ControllerAdvice
-class EmployeeNotFoundAdvice {
+class ArticleNotFoundAdvice {
 
 	@ResponseBody
 	@ExceptionHandler(ArticleNotFoundException.class)
 	@ResponseStatus(HttpStatus.NOT_FOUND)
-	String employeeNotFoundHandler(ArticleNotFoundException ex) {
+	String articleNotFoundHandler(ArticleNotFoundException ex) {
 		return ex.getMessage();
 	}
 }
