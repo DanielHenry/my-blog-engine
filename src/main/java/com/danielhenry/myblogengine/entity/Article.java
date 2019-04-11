@@ -18,12 +18,24 @@ public class Article {
 		this.title = title;
 		this.content = content;
     }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
     
     public String getTitle() {
         return this.title;
     }
 
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
     public String getContent() {
         return this.content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
     }
 }
