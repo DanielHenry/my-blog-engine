@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.danielhenry.myblogengine.entity.Article;
 import com.danielhenry.myblogengine.repository.ArticleRepository;
+import com.danielhenry.myblogengine.exception.ArticleNotFoundException;
 
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
